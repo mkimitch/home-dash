@@ -1,0 +1,22 @@
+{
+	"name": "momentumdash-clone",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": [
+		"frontend",
+		"backend"
+	],
+	"scripts": {
+		"dev": "concurrently \"yarn workspace frontend dev\" \"yarn workspace backend dev\"",
+		"build": "concurrently \"yarn workspace frontend build\" \"yarn workspace backend build\"",
+		"lint": "concurrently \"yarn workspace frontend lint\" \"yarn workspace backend lint\"",
+		"test": "concurrently \"yarn workspace frontend test\" \"yarn workspace backend test\"",
+		"e2e": "yarn workspace frontend e2e",
+		"a11y": "yarn workspace frontend a11y"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0"
+	}
+}
