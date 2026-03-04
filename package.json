@@ -12,8 +12,7 @@
     "lint": "concurrently \"yarn workspace frontend lint\" \"yarn workspace backend lint\"",
     "test": "concurrently \"yarn workspace frontend test\" \"yarn workspace backend test\"",
     "e2e": "yarn workspace frontend e2e",
-    "a11y": "yarn workspace frontend a11y",
-    "preinstall": "node preinstall.js"
+    "a11y": "yarn workspace frontend a11y"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
